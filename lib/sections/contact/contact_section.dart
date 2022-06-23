@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 
 import '../../components/default_button.dart';
+import '../../components/lets_talk_widget.dart';
 import '../../components/section_title.dart';
 import '../../constants.dart';
 import 'components/socal_card.dart';
@@ -14,21 +15,28 @@ class ContactSection extends StatelessWidget {
       // height: 500,
       width: double.infinity,
       decoration: const BoxDecoration(
-        color: const Color(0xFFE8F0F9),
+        color: Color(0xFFE8F0F9),
         image: DecorationImage(
           fit: BoxFit.cover,
-          image: const AssetImage("assets/images/bg_img_2.png"),
+          image: AssetImage("assets/images/bg_img_2.png"),
         ),
       ),
       child: Column(
-        children: const [
-          SizedBox(height: kDefaultPadding * 2.5),
-           SectionTitle(
-            title: "Contact Me",
-            subTitle: "For Project inquiry and information",
-            color: Color(0xFF07E24A),
+        children:  [
+          const SizedBox(height: kDefaultPadding * 2.5),
+           Row(
+
+             children: const [
+               SectionTitle(
+                title: "Contact Me",
+                subTitle: "For Project inquiry and information",
+                color: Color(0xFF07E24A),
           ),
-          ContactBox()
+
+               LetsTalk(),
+             ],
+           ),
+          const ContactBox()
         ],
       ),
     );
@@ -48,7 +56,7 @@ class ContactBox extends StatelessWidget {
       padding: const EdgeInsets.all(kDefaultPadding * 3),
       decoration: const BoxDecoration(
         color: Colors.white,
-        borderRadius: const BorderRadius.only(
+        borderRadius: BorderRadius.only(
           topLeft: Radius.circular(20),
           topRight: Radius.circular(20),
         ),

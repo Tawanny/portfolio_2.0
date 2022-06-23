@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mutumbami_portfolio_2/components/rounded_button.dart';
 
 import '../constants.dart';
 import 'default_button.dart';
@@ -37,7 +38,7 @@ class HireMeCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children:  [
                 Text(
-                  'So What are you waiting for?',
+                  'So what are you waiting for?',
                   style: Theme.of(context).textTheme.headline4?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
@@ -51,11 +52,15 @@ class HireMeCard extends StatelessWidget {
               ],
             ),
           ),
-          DefaultButton(
-            text: "Hire Me!",
-            imageSrc: "assets/images/hand.png",
-            press: () {},
-          )
+          InkWell(
+            onTap: () {},
+            child: RoundedButton(
+              height: 50,
+              width: 180,
+              icon: Image.asset('assets/images/hand.png'),
+              text: 'Let\'s Work Together',
+            ),
+          ),
         ],
       ),
     );

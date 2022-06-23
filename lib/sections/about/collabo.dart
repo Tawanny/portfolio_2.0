@@ -23,7 +23,8 @@ class Collabo extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
               ),
-              subtitle: const Text(collaboText,
+              subtitle: const Text(
+                  collaboText,
                   style: TextStyle(
                       fontWeight: FontWeight.w200,
                       color: kTextColor,

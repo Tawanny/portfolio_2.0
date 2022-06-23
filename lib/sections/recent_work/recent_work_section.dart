@@ -12,8 +12,6 @@ class RecentWorkSection extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(top: kDefaultPadding * 6),
       width: double.infinity,
-      // just for demo
-      // height: 600,
       decoration: BoxDecoration(
         color: const Color(0xFFF7E8FF).withOpacity(0.3),
         image: const DecorationImage(
@@ -28,7 +26,7 @@ class RecentWorkSection extends StatelessWidget {
             child: const HireMeCard(),
           ),
           const SectionTitle(
-            title: "Recent Woorks",
+            title: "Recent Works",
             subTitle: "My Strong Arenas",
             color: const Color(0xFFFFB100),
           ),
