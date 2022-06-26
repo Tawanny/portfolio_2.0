@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 import '../../components/default_button.dart';
 import '../../components/lets_talk_widget.dart';
 import '../../components/section_title.dart';
@@ -22,21 +21,13 @@ class ContactSection extends StatelessWidget {
         ),
       ),
       child: Column(
-        children:  [
-          const SizedBox(height: kDefaultPadding * 2.5),
-           Row(
-
-             children: const [
-               SectionTitle(
-                title: "Contact Me",
-                subTitle: "For Project inquiry and information",
-                color: Color(0xFF07E24A),
+        children: const [
+          SectionTitle(
+            title: "Contact Me",
+            subTitle: "For Project inquiry and information",
+            color: Color(0xFF07E24A),
           ),
-
-               LetsTalk(),
-             ],
-           ),
-          const ContactBox()
+          ContactBox()
         ],
       ),
     );
@@ -87,7 +78,7 @@ class ContactBox extends StatelessWidget {
             ],
           ),
           const SizedBox(height: kDefaultPadding * 2),
-           const ContactForm(),
+          const ContactForm(),
         ],
       ),
     );
