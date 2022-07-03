@@ -4,7 +4,7 @@ import 'package:ionicons/ionicons.dart';
 class Service {
   final int? id;
   final String? title, shortDescriptiom;
-  final IconData? icon;
+  final String? icon;
   final Color? color;
 
   Service({this.id, this.title, this.shortDescriptiom, this.color, this.icon});
@@ -17,7 +17,7 @@ List<Service> services = [
     title: 'Mobile App Development',
     shortDescriptiom:
         'Responsive and adaptive apps for both IOS and Android OS',
-    icon: Ionicons.phone_portrait_outline,
+    icon: 'assets/images/development.png',
     color: const Color(0xFFD9FFFC),
   ),
   Service(
@@ -26,7 +26,7 @@ List<Service> services = [
     shortDescriptiom:
         'Bring your ideas to life online with a beautiful, responsive webiste that communicate your uniqueness.',
     color: const Color(0xFFE4FFC7),
-    icon: Ionicons.desktop_outline,
+    icon: 'assets/images/ux.png',
   ),
   Service(
     id: 3,
@@ -34,7 +34,7 @@ List<Service> services = [
     shortDescriptiom:
         'An idea is just an idea but it is all about how you present it to the world',
     color: const Color(0xFFFFF3DD),
-    icon: Ionicons.desktop_outline,
+    icon: 'assets/images/user-interface.png',
   ),
   Service(
     id: 4,
@@ -42,7 +42,7 @@ List<Service> services = [
     shortDescriptiom:
         'Reach millions of people with highly Interactive Apps that runs on any mordern browser',
     color: const Color(0xFFFFE0E0),
-    icon: Ionicons.desktop_outline,
+    icon: 'assets/images/web-development.png',
   ),
   Service(
     id: 5,
@@ -50,7 +50,7 @@ List<Service> services = [
     shortDescriptiom:
         'High-quality and performant desktop Apps for Windows, Linux and Mac',
     color: const Color(0xFFFFF3DD),
-    icon: Ionicons.desktop_outline,
+    icon: 'assets/images/ux.png',
   ),
   Service(
     id: 6,
@@ -58,7 +58,7 @@ List<Service> services = [
     shortDescriptiom:
         'Get found locally on every search by your customers using google business services',
     color: const Color(0xFFD9FFFC),
-    icon: Ionicons.desktop_outline,
+    icon: 'assets/images/google.png',
   ),
   Service(
     id: 7,
@@ -66,7 +66,7 @@ List<Service> services = [
     shortDescriptiom:
         'Revise what\'s working and what\'s not on your sight by my analytics services',
     color: const Color(0xFFFFE0E0),
-    icon: Ionicons.desktop_outline,
+    icon: 'assets/images/seo.png',
   ),
   Service(
     id: 8,
@@ -74,6 +74,6 @@ List<Service> services = [
     shortDescriptiom:
         'Let your site stay relevant, updated and bug free by continuous checking and upgrading',
     color: const Color(0xFFE4FFC7),
-    icon: Ionicons.desktop_outline,
+    icon: 'assets/images/system.png',
   ),
 ];

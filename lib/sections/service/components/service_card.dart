@@ -43,8 +43,9 @@ class _ServiceCardState extends State<ServiceCard> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: kDefaultPadding/2),
-            Icon(
+            Image.asset(
               services[widget.index].icon!,
+              height: 40,
             ),
             const SizedBox(height: kDefaultPadding/2),
             Text(
@@ -52,7 +53,7 @@ class _ServiceCardState extends State<ServiceCard> {
               maxLines: 2,
               style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w500,),
             ),
-            const SizedBox(height: kDefaultPadding/2),
+            const SizedBox(height: kDefaultPadding/3),
             Text(
               services[widget.index].shortDescriptiom!,
               maxLines: 3,
