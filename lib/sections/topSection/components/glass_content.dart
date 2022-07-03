@@ -1,8 +1,11 @@
 import 'dart:ui';
 
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:ionicons/ionicons.dart';
 
 import '../../../constants.dart';
+import 'carousel.dart';
 
 class GlassContent extends StatelessWidget {
   const GlassContent({
@@ -30,12 +33,23 @@ class GlassContent extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Spacer(),
-              Text(
-                'Leveraging Technology in a Creative way to help startUps',
-                style: Theme.of(context).textTheme.headline5!.copyWith(
-                  color: Colors.black,
+              RichText(
+                text: TextSpan(
+                  text:
+                      'My mission is Leveraging Technology in a Creative way to help startUps, small and medium businesses \n',
+                  style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                        color: Colors.white,
+                      ),
+                  children: [
+                    TextSpan(
+                      text: 'LAUNCH AND GROW ONLINE',
+                      style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                    ),
+                  ],
                 ),
-                textAlign: TextAlign.center,
               ),
               const Spacer(flex: 2),
               Text(

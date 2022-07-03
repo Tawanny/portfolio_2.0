@@ -22,14 +22,96 @@ class ServiceSection extends StatelessWidget {
             title: 'My Services',
             subTitle: 'My Super Powers',
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          GridView.count(
+            shrinkWrap: true,
+            crossAxisCount: 4,
+            mainAxisSpacing: 10,
+            crossAxisSpacing: 10,
             children: List.generate(
                 services.length, (index) => ServiceCard(index: index)),
           ),
-          const SizedBox(height: 60),
-          const AllCompServices(),
+          const SizedBox(height: 30),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+
+              toolsIcon(
+                context: context,
+                iconUrl: 'assets/images/flutter.png',
+                name: 'Flutter',
+              ),
+              toolsIcon(
+                context: context,
+                iconUrl: 'assets/images/dart.png',
+                name: 'Dart',
+              ),
+              toolsIcon(
+                context: context,
+                iconUrl: 'assets/images/figma.png',
+                name: 'Figma',
+              ),
+              toolsIcon(
+                context: context,
+                iconUrl: 'assets/images/firebase.png',
+                name: 'Firebase',
+              ),
+              toolsIcon(
+                context: context,
+                iconUrl: 'assets/images/firestore.png',
+                name: 'Firestore',
+              ),
+              toolsIcon(
+                context: context,
+                iconUrl: 'assets/images/github.png',
+                name: 'Github',
+              ),
+              toolsIcon(
+                context: context,
+                iconUrl: 'assets/images/google_cloud.png',
+                name: 'Google Cloud',
+              ),
+              toolsIcon(
+                context: context,
+                iconUrl: 'assets/images/wix.png',
+                name: 'Wix',
+              ),
+
+            ],
+          ),
+
+
+
         ],
+      ),
+    );
+  }
+
+  Widget toolsIcon({BuildContext? context, String? iconUrl, String? name}) {
+    return Padding(
+      padding: const EdgeInsets.all( 20.0),
+      child: SizedBox(
+        height: 60,
+        child: Column(
+          children: [
+            Container(
+              height: 30,
+              width: 30,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(iconUrl!),
+                ),
+                shape: BoxShape.circle,
+              ),
+            ),
+            const SizedBox(height: 10),
+            Text(
+              name!,
+              style: Theme.of(context!).textTheme.subtitle1!.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+            ),
+          ],
+        ),
       ),
     );
   }

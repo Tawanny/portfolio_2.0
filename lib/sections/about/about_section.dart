@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mutumbami_portfolio_2/components/lets_talk_widget.dart';
 import 'package:mutumbami_portfolio_2/sections/about/collabo.dart';
 
 import '../../components/default_button.dart';
@@ -35,32 +36,12 @@ class AboutSection extends StatelessWidget {
                           ),
                     ),
                     const SizedBox(height: kDefaultPadding),
-                    SizedBox(
-                      height: 100,
-                      width: 100,
-                      child: Image.asset(
-                        'assets/gif/talk to me.gif',
-                      ),
+                    const LetsTalk(
+                      text: 'Let\'s Talk',
                     ),
-                    const SizedBox(height: kDefaultPadding / 2),
-                    Container(
-                      decoration: const BoxDecoration(
-                          border: Border(
-                        bottom: BorderSide(color: prColor),
-                      )),
-                      child: TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          'Let\'s Talk',
-                          textAlign: TextAlign.center,
-                          style:
-                              Theme.of(context).textTheme.subtitle1!.copyWith(
-                                    color: prColor,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                        ),
-                      ),
-                    ),
+
+
+
                   ],
                 ),
               ),

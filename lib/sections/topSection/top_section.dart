@@ -1,13 +1,10 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:mutumbami_portfolio_2/constants.dart';
-import 'package:mutumbami_portfolio_2/sections/topSection/components/glass_content.dart';
+import 'package:ionicons/ionicons.dart';
 
-import '../../components/my_outline_button.dart';
 import '../../components/rounded_button.dart';
+import '../../constants.dart';
+import 'components/carousel.dart';
 import 'components/menu.dart';
-import 'components/person_pic.dart';
 
 class TopSection extends StatelessWidget {
   const TopSection({Key? key}) : super(key: key);
@@ -33,37 +30,71 @@ class TopSection extends StatelessWidget {
           constraints: const BoxConstraints(maxHeight: 900, minHeight: 700),
           width: double.infinity,
           height: size.height,
-         color: Colors.black26,
+          color: Colors.black54,
           child: SizedBox(
             width: 1200,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image.asset(
-                  'assets/images/logo_noBg.png',
-                  height: 300,
-                  width: 400,
-                  color: Colors.deepOrange,
-                ),
-                //  const Spacer(),
-                GlassContent(size: size),
-                const Spacer(
-                  flex: 2,
-                ),
-                Row(
-                  children:  [
-                    const Spacer(),
-                    RoundedButton(
-                      height: 50,
-                      width: 150,
-                      text:  'Work With Me',
-
+                Expanded(
+                  child: Column(
+                    children: [
+                      const Spacer(),
+                      const SocialMediaLinks(),
+                      const SizedBox(height: 30),
+                      Text(
+                        'Danmore Mutumbami',
+                        style: Theme.of(context).textTheme.headline5!.copyWith(
+                              color: Colors.white,
+                              fontSize: 40,
+                              fontWeight: FontWeight.bold,
+                            ),
+                        textAlign: TextAlign.center,
                       ),
-
-                    const Spacer(),
-                  ],
+                      const SizedBox(height: 15),
+                      const IamCarousel(),
+                      const SizedBox(height: 15),
+                      RichText(
+                        textAlign: TextAlign.center,
+                        text: TextSpan(
+                          text:
+                              'Leveraging Technology in a Creative way to help startUps, small and medium businesses \n',
+                          style:
+                              Theme.of(context).textTheme.subtitle1!.copyWith(
+                                    color: Colors.white,
+                                  ),
+                          children: [
+                            TextSpan(
+                              text: '\nLAUNCH AND GROW ONLINE',
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .subtitle1!
+                                  .copyWith(
+                                    color: prColor,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 30),
+                      RoundedButton(
+                        height: 35,
+                        width: 130,
+                        text: 'Work With Me',
+                      ),
+                      const Spacer(),
+                    ],
+                  ),
                 ),
-                const Spacer(),
+                const Expanded(
+                  child: Icon(
+                    Ionicons.person_outline,
+                    size: 400,
+                  ),
+                ),
+
+                //GlassContent(size: size),
               ],
             ),
           ),
@@ -79,4 +110,35 @@ class TopSection extends StatelessWidget {
   }
 }
 
+class SocialMediaLinks extends StatelessWidget {
+  const SocialMediaLinks({
+    Key? key,
+  }) : super(key: key);
 
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 200,
+      child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: const [
+            Icon(
+              Ionicons.logo_whatsapp,
+              color: Colors.green,
+            ),
+            Icon(
+              Ionicons.logo_slack,
+              color: Colors.yellow,
+            ),
+            Icon(
+              Ionicons.logo_twitter,
+              color: Colors.blue,
+            ),
+            Icon(
+              Ionicons.logo_snapchat,
+              color: Colors.amber,
+            ),
+          ]),
+    );
+  }
+}

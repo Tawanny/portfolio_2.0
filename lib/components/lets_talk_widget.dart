@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 
 class LetsTalk extends StatelessWidget {
-  const LetsTalk({Key? key}) : super(key: key);
+  const LetsTalk({Key? key, this.text}) : super(key: key);
+  final String? text;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class LetsTalk extends StatelessWidget {
           child: TextButton(
             onPressed: () {},
             child: Text(
-              'Let\'s Talk',
+              text!,
               textAlign: TextAlign.center,
               style:
               Theme.of(context).textTheme.subtitle1!.copyWith(
