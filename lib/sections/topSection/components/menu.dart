@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
+import '../../../utils/constants.dart';
 
 class Menu extends StatefulWidget {
   @override
@@ -18,6 +18,7 @@ class _MenuState extends State<Menu> {
     'Testimonial',
     'Contact'
   ];
+
   @override
   Widget build(BuildContext context) {
     return Container(

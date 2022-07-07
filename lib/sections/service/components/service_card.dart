@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
+import '../../../utils/constants.dart';
 import '../../../models/Service.dart';
 
 class ServiceCard extends StatefulWidget {
@@ -18,6 +18,7 @@ class ServiceCard extends StatefulWidget {
 class _ServiceCardState extends State<ServiceCard> {
   bool isHover = false;
   Duration duration = const Duration(milliseconds: 200);
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -42,18 +43,21 @@ class _ServiceCardState extends State<ServiceCard> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: kDefaultPadding/2),
+            const SizedBox(height: kDefaultPadding / 2),
             Image.asset(
               services[widget.index].icon!,
               height: 40,
             ),
-            const SizedBox(height: kDefaultPadding/2),
+            const SizedBox(height: kDefaultPadding / 2),
             Text(
               services[widget.index].title!,
               maxLines: 2,
-              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w500,),
+              style: const TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+              ),
             ),
-            const SizedBox(height: kDefaultPadding/3),
+            const SizedBox(height: kDefaultPadding / 3),
             Text(
               services[widget.index].shortDescriptiom!,
               maxLines: 3,
@@ -62,9 +66,7 @@ class _ServiceCardState extends State<ServiceCard> {
                 color: kTextColor,
                 height: 2,
               ),
-
             ),
-
           ],
         ),
       ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mutumbami_portfolio_2/components/rounded_button.dart';
 
-import '../../constants.dart';
+import '../../utils/constants.dart';
 
 class Collabo extends StatelessWidget {
   const Collabo({Key? key}) : super(key: key);
@@ -23,8 +23,7 @@ class Collabo extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
               ),
-              subtitle: const Text(
-                  collaboText,
+              subtitle: const Text(collaboText,
                   style: TextStyle(
                       fontWeight: FontWeight.w200,
                       color: kTextColor,

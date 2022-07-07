@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
+import '../../../utils/constants.dart';
 
 class SocialCard extends StatefulWidget {
   const SocialCard({
@@ -8,7 +8,7 @@ class SocialCard extends StatefulWidget {
     this.iconSrc,
     this.name,
     this.color,
-     this.press,
+    this.press,
   }) : super(key: key);
 
   final String? iconSrc, name;
@@ -21,6 +21,7 @@ class SocialCard extends StatefulWidget {
 
 class _SocialCardState extends State<SocialCard> {
   bool isHover = false;
+
   @override
   Widget build(BuildContext context) {
     return FittedBox(

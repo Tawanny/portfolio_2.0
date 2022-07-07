@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../components/rounded_button.dart';
-import '../../constants.dart';
+import '../../utils/constants.dart';
 
 class DownloadCV extends StatelessWidget {
   const DownloadCV({

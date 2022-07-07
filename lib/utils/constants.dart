@@ -3,14 +3,23 @@ import 'package:flutter/material.dart';
 const kTextColor = Color(0xFF707070);
 const kTextLightColor = Color(0xFF555555);
 const prColor = Colors.deepOrange;
-var scndColor = Colors.blue[900];
+var scndColor = Color(0xFF366CF6);
+
+const kPrimaryColor = Color(0xFF366CF6);
+const kSecondaryColor = Color(0xFFF5F6FC);
+const kBgLightColor = Color(0xFFF2F4FC);
+const kBgDarkColor = Color(0xFFEBEDFA);
+const kBadgeColor = Color(0xFFEE376E);
+const kGrayColor = Color(0xFF8793B2);
+const kTitleTextColor = Color(0xFF30384D);
+//const kTextColor = Color(0xFF4D5875);
 
 const kDefaultPadding = 20.0;
 
 final kDefaultShadow = BoxShadow(
   offset: const Offset(0, 50),
   blurRadius: 50,
-  color: scndColor!.withOpacity(0.25),
+  color: scndColor.withOpacity(0.25),
 );
 
 final kDefaultCardShadow = BoxShadow(
@@ -56,10 +65,12 @@ const String blogPostsText =
 //MY UNIQUE POINTS
 const String startupFirstText =
     'I know the hardships of being a startup, believe me, I have been there. Something you need is always too expensive, people saying no to you and customers not trusting you enough. That is why I developed my \'Startup First Attitude\'. I am dedicated to building your brand online. To help you start your business with a \'Bang\', with a wow effect that will make people, fall in love with you instantly. By working together we can build your online presence that will make you look professional and reliable at the same time communicating your uniqueness and aunthenticity.\n\nThere are a lot of things that makes it hard to be startup and grow but being online doesn\'t have to be one of them. By leveraging technology and all my skills to your advantage, I will ensure that your clients get the attention they deserve whether it is in person with you or it is online.';
-const String startupShortText = 'I know the hardships of being a startup, believe me, I have been there. That is why I developed my \'Startup First Attitude\'. I am dedicated to building your brand online. To help you start your business with a \'Bang\', with a wow effect that will make people, fall in love with you instantly. By leveraging technology and all my skills to your advantage, we can build your online presence that will make you look professional and reliable at the same time communicating your uniqueness and aunthenticity.';
+const String startupShortText =
+    'I know the hardships of being a startup, believe me, I have been there. That is why I developed my \'Startup First Attitude\'. I am dedicated to building your brand online. To help you start your business with a \'Bang\', with a wow effect that will make people, fall in love with you instantly. By leveraging technology and all my skills to your advantage, we can build your online presence that will make you look professional and reliable at the same time communicating your uniqueness and aunthenticity.';
 const String flexiblePaymentsText =
     'Money being one of the biggest barriers when it comes to startups launching their online businesses, creating a website or app for their businesses. I have seen many small businesses settling for sub-standard sites and I have seen and heard many people giving up on their app based ideas because it is expensive to build an app. Well, I am taking that out of the equation by my flexible payment plans. \n\nWe can work-out a payment plan tailored to suit your budget or your monthly income. You don\'t have to pay me once-off, no, you can pay me as you can. If you business is based on subscriptions, you can pay me as per your income so as not to overwhelm you. \n\nYou have an idea for an app, lets work together to bring it to life and then talk about payments. I am telling you, it doesn\'t get any better that this.';
-const String flexiblePaymentsShortText ='Money is one of the biggest barriers when it comes to startups launching their online businesses,  creating a website or app for their businesses. I am taking that out of the equation by my flexible payment plans. We can work-out a payment plan tailored to suit your budget or your monthly income without compromising the quality of work. You can still have a world class software but with ease on your pocket. We can work together to bring your business to life, without finances tearing you down.';
+const String flexiblePaymentsShortText =
+    'Money is one of the biggest barriers when it comes to startups launching their online businesses,  creating a website or app for their businesses. I am taking that out of the equation by my flexible payment plans. We can work-out a payment plan tailored to suit your budget or your monthly income without compromising the quality of work. You can still have a world class software but with ease on your pocket. We can work together to bring your business to life, without finances tearing you down.';
 const String uniqueText =
     'You are an expert at what you do, I don\'t doubt that, but I don\'t expect you to be an expert in Software development and Web design too, that is my arena. As I am a startup myself, I understand the stress of trying to make everything work. I understand the pressure of competing with well established business. I completely understand the confusion of what to start with, who to talk to and what to do next.\n\n';
 const String hereToHelpText =

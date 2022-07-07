@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import '../utils/constants.dart';
 
 class LetsTalk extends StatelessWidget {
   const LetsTalk({Key? key, this.text}) : super(key: key);
@@ -21,18 +21,17 @@ class LetsTalk extends StatelessWidget {
         Container(
           decoration: const BoxDecoration(
               border: Border(
-                bottom: BorderSide(color: prColor),
-              )),
+            bottom: BorderSide(color: prColor),
+          )),
           child: TextButton(
             onPressed: () {},
             child: Text(
               text!,
               textAlign: TextAlign.center,
-              style:
-              Theme.of(context).textTheme.subtitle1!.copyWith(
-                color: prColor,
-                fontWeight: FontWeight.bold,
-              ),
+              style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                    color: prColor,
+                    fontWeight: FontWeight.bold,
+                  ),
             ),
           ),
         ),

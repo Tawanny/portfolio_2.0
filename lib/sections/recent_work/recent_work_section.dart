@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../components/hireme_card.dart';
 import '../../components/section_title.dart';
-import '../../constants.dart';
+import '../../utils/constants.dart';
 import '../../models/RecentWork.dart';
 import 'components/recent_work_card.dart';
 

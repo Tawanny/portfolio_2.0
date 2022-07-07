@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import '../utils/constants.dart';
 
 class MyOutlineButton extends StatelessWidget {
   const MyOutlineButton({
@@ -27,7 +27,6 @@ class MyOutlineButton extends StatelessWidget {
           ),
           side: BorderSide(color: Color(0xFFEDEDED)),
         ),
-
         onPressed: () => press,
         child: Row(
           children: [

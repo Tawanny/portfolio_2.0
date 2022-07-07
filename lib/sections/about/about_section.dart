@@ -5,7 +5,7 @@ import 'package:mutumbami_portfolio_2/sections/about/collabo.dart';
 import '../../components/default_button.dart';
 import '../../components/my_outline_button.dart';
 import '../../components/rounded_button.dart';
-import '../../constants.dart';
+import '../../utils/constants.dart';
 import 'components/about_section_text.dart';
 import 'components/about_text_with_sign.dart';
 import 'components/experience_card.dart';
@@ -39,9 +39,6 @@ class AboutSection extends StatelessWidget {
                     const LetsTalk(
                       text: 'Let\'s Talk',
                     ),
-
-
-
                   ],
                 ),
               ),

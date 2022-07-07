@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mutumbami_portfolio_2/components/rounded_button.dart';
 
-import '../constants.dart';
+import '../utils/constants.dart';
 import 'default_button.dart';
 
 class HireMeCard extends StatelessWidget {
@@ -36,18 +36,18 @@ class HireMeCard extends StatelessWidget {
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children:  [
+              children: [
                 Text(
                   'So what are you waiting for?',
                   style: Theme.of(context).textTheme.headline4?.copyWith(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
                 ),
                 const SizedBox(height: kDefaultPadding / 2),
                 const Text(
                   hireMeText,
-                  style:  TextStyle(fontWeight: FontWeight.w200),
+                  style: TextStyle(fontWeight: FontWeight.w200),
                 )
               ],
             ),

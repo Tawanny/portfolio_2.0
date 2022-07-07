@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
 import '../../components/rounded_button.dart';
-import '../../constants.dart';
+import '../../utils/constants.dart';
 import 'components/carousel.dart';
 import 'components/menu.dart';
 

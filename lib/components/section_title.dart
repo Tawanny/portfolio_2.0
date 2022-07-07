@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import '../utils/constants.dart';
 
 class SectionTitle extends StatelessWidget {
   const SectionTitle({
@@ -27,24 +27,22 @@ class SectionTitle extends StatelessWidget {
             width: 8,
             height: 70,
             color: color,
-
-            ),
-
+          ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Text(
                 subTitle!,
-                style:
-                    const TextStyle(fontWeight: FontWeight.w200, color: kTextColor),
+                style: const TextStyle(
+                    fontWeight: FontWeight.w200, color: kTextColor),
               ),
               Text(
                 title!,
                 style: Theme.of(context).textTheme.headline4?.copyWith(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
               )
             ],
           )

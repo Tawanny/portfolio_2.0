@@ -1,10 +1,15 @@
-import 'package:mutumbami_portfolio_2/constants.dart';
+import 'package:mutumbami_portfolio_2/utils/constants.dart';
 
 class UniqueItem {
   String? title, subtitle, iconUrl;
   bool isExpanded;
 
-  UniqueItem({this.title, this.subtitle, this.iconUrl, this.isExpanded = false,});
+  UniqueItem({
+    this.title,
+    this.subtitle,
+    this.iconUrl,
+    this.isExpanded = false,
+  });
 }
 
 List<UniqueItem> uniqueItems = [
@@ -12,7 +17,6 @@ List<UniqueItem> uniqueItems = [
     title: 'Start Up First',
     subtitle: startupShortText,
     iconUrl: 'assets/gif/one.gif',
-
   ),
   UniqueItem(
     title: 'Flexible Payment Plans',

@@ -2,7 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
-import '../../../constants.dart';
+import '../../../utils/constants.dart';
 
 class IamCarousel extends StatelessWidget {
   const IamCarousel({

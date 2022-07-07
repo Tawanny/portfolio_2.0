@@ -4,7 +4,7 @@ import 'package:mutumbami_portfolio_2/components/lets_talk_widget.dart';
 import 'package:mutumbami_portfolio_2/models/unique_model.dart';
 import '../../components/hireme_card.dart';
 import '../../components/section_title.dart';
-import '../../constants.dart';
+import '../utils/constants.dart';
 import '../../models/RecentWork.dart';
 
 class WhatMakesMeUnique extends StatefulWidget {
@@ -68,7 +68,8 @@ class _WhatMakesMeUniqueState extends State<WhatMakesMeUnique> {
                             .copyWith(dividerColor: Colors.transparent),
                         child: SizedBox(
                           child: ExpansionTile(
-                            tilePadding: const EdgeInsets.symmetric(vertical: 5),
+                            tilePadding:
+                                const EdgeInsets.symmetric(vertical: 5),
                             childrenPadding: const EdgeInsets.all(8),
                             key: expTileKey,
                             initiallyExpanded: isExpanded,
@@ -115,7 +116,6 @@ class _WhatMakesMeUniqueState extends State<WhatMakesMeUnique> {
               ],
             ),
           ),
-         
           const SizedBox(height: kDefaultPadding * 5),
         ],
       ),

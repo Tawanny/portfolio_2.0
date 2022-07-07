@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mutumbami_portfolio_2/utils/extensions.dart';
 
-import '../constants.dart';
+import '../utils/constants.dart';
 
 class RoundedButton extends StatelessWidget {
   RoundedButton({
@@ -25,7 +26,7 @@ class RoundedButton extends StatelessWidget {
     return Container(
       height: height,
       width: width,
-      alignment: Alignment.center,
+      alignment: Alignment.topCenter,
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(borderRadius),
@@ -45,6 +46,6 @@ class RoundedButton extends StatelessWidget {
           const Spacer(),
         ],
       ),
-    );
+    ).addNeumorphism();
   }
 }

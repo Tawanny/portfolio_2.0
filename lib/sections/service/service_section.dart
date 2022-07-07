@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mutumbami_portfolio_2/sections/service/components/all_comp_services.dart';
 
 import '../../components/section_title.dart';
-import '../../constants.dart';
 import '../../models/Service.dart';
+import '../../utils/constants.dart';
 import 'components/service_card.dart';
 
 class ServiceSection extends StatelessWidget {
@@ -34,53 +33,48 @@ class ServiceSection extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-
               toolsIcon(
                 context: context,
-                iconUrl: 'assets/images/flutter.png',
+                iconUrl: 'assets/icons/flutter.png',
                 name: 'Flutter',
               ),
               toolsIcon(
                 context: context,
-                iconUrl: 'assets/images/dart.png',
+                iconUrl: 'assets/icons/dart.png',
                 name: 'Dart',
               ),
               toolsIcon(
                 context: context,
-                iconUrl: 'assets/images/figma.png',
+                iconUrl: 'assets/icons/figma.png',
                 name: 'Figma',
               ),
               toolsIcon(
                 context: context,
-                iconUrl: 'assets/images/firebase.png',
+                iconUrl: 'assets/icons/firebase.png',
                 name: 'Firebase',
               ),
               toolsIcon(
                 context: context,
-                iconUrl: 'assets/images/firestore.png',
+                iconUrl: 'assets/icons/firestore.png',
                 name: 'Firestore',
               ),
               toolsIcon(
                 context: context,
-                iconUrl: 'assets/images/github.png',
+                iconUrl: 'assets/icons/github.png',
                 name: 'Github',
               ),
               toolsIcon(
                 context: context,
-                iconUrl: 'assets/images/google_cloud.png',
+                iconUrl: 'assets/icons/google_cloud.png',
                 name: 'Google Cloud',
               ),
               toolsIcon(
                 context: context,
-                iconUrl: 'assets/images/wix.png',
+                iconUrl: 'assets/icons/wix.png',
                 name: 'Wix',
               ),
-
             ],
           ),
-
-
-
         ],
       ),
     );
@@ -88,7 +82,7 @@ class ServiceSection extends StatelessWidget {
 
   Widget toolsIcon({BuildContext? context, String? iconUrl, String? name}) {
     return Padding(
-      padding: const EdgeInsets.all( 20.0),
+      padding: const EdgeInsets.all(20.0),
       child: SizedBox(
         height: 60,
         child: Column(

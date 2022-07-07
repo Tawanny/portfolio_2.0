@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../components/default_button.dart';
 import '../../components/lets_talk_widget.dart';
 import '../../components/section_title.dart';
-import '../../constants.dart';
+import '../../utils/constants.dart';
 import 'components/socal_card.dart';
 
 class ContactSection extends StatelessWidget {

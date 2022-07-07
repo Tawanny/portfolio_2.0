@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
+import '../../../utils/constants.dart';
 import '../../../models/RecentWork.dart';
 
 class RecentWorkCard extends StatefulWidget {
@@ -20,10 +20,11 @@ class RecentWorkCard extends StatefulWidget {
 
 class _RecentWorkCardState extends State<RecentWorkCard> {
   bool isHover = false;
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: ()=>widget.press!,
+      onTap: () => widget.press!,
       onHover: (value) {
         setState(() {
           isHover = value;
@@ -43,7 +44,8 @@ class _RecentWorkCardState extends State<RecentWorkCard> {
             Image.asset(recentWorks[widget.index!].image!),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: kDefaultPadding),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,

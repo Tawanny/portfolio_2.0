@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../components/section_title.dart';
-import '../../constants.dart';
+import '../../utils/constants.dart';
 import '../../models/Feedback.dart';
 import 'components/feedback_card.dart';
 

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ionicons/ionicons.dart';
 
 class Service {
   final int? id;
@@ -22,7 +21,7 @@ List<Service> services = [
   ),
   Service(
     id: 2,
-    title: "Web Design",
+    title: 'Web Design',
     shortDescriptiom:
         'Bring your ideas to life online with a beautiful, responsive webiste that communicate your uniqueness.',
     color: const Color(0xFFE4FFC7),
@@ -30,7 +29,7 @@ List<Service> services = [
   ),
   Service(
     id: 3,
-    title: "UI Design",
+    title: 'UI Design',
     shortDescriptiom:
         'An idea is just an idea but it is all about how you present it to the world',
     color: const Color(0xFFFFF3DD),
@@ -58,7 +57,7 @@ List<Service> services = [
     shortDescriptiom:
         'Get found locally on every search by your customers using google business services',
     color: const Color(0xFFD9FFFC),
-    icon: 'assets/images/google.png',
+    icon: 'assets/icons/google.png',
   ),
   Service(
     id: 7,
@@ -70,7 +69,7 @@ List<Service> services = [
   ),
   Service(
     id: 8,
-    title: 'Site/App Maintainance',
+    title: 'Site/App Maintenance',
     shortDescriptiom:
         'Let your site stay relevant, updated and bug free by continuous checking and upgrading',
     color: const Color(0xFFE4FFC7),

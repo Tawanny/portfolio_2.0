@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
+import '../../../utils/constants.dart';
 import '../../../models/Feedback.dart';
 
 class FeedbackCard extends StatefulWidget {
   const FeedbackCard({
-    Key ?key,
+    Key? key,
     this.index,
   }) : super(key: key);
 
@@ -18,6 +18,7 @@ class FeedbackCard extends StatefulWidget {
 class _FeedbackCardState extends State<FeedbackCard> {
   Duration duration = const Duration(milliseconds: 200);
   bool isHover = false;
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
